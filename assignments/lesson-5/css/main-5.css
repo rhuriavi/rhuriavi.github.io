@@ -1,6 +1,4 @@
 
- { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
-
 body {
   font-size: 16px;
   font-family: 'arial', 'helvetica', sans-serif;/* Declare the base font-family */
@@ -9,7 +7,7 @@ body {
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: 37.5; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+  max-width: 37.5em; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
 
@@ -44,7 +42,7 @@ h1, h2, h3, h4, h5, h6{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
-    border-bottom-style: 25px;
+
     padding:.5em;
     
 }
@@ -54,7 +52,7 @@ h1, h2, h3, h4, h5, h6{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
-    border-bottom-style: 25px;
+    
     display:inline;
     padding:10px;
     margin-top:20px;
@@ -126,7 +124,6 @@ footer {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
-    border-bottom-style: 25px;
     padding:20px;
     margin-bottom: 20px;
     
