@@ -1,13 +1,15 @@
 
 body {
-  font-size: 16px;
-  font-family: 'arial', 'helvetica', sans-serif;/* Declare the base font-family */
-  background-color: #AAA7B2;
-  
+    font-size: 16px;
+    font-family: 'arial', 'helvetica', sans-serif;/* Declare the base font-family */
+    background-color: #AAA7B2;
+
+
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
   max-width: 37.5em; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    margin: 0 auto;
 }
 
 
