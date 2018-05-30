@@ -1,0 +1,134 @@
+
+body {
+    font-size: 16px;
+    /*font-family: 'arial', 'helvetica', sans-serif;/* Declare the base font-family */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #AAA7B2;
+
+
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 37.5em; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    margin: 0 auto;
+}
+
+
+.forecast{
+    display: none;
+}
+
+header h1 {
+    position:relative;
+    
+}
+header img {
+    float:left;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+header .subheading {}
+
+h1, h2, h3, h4, h5, h6{
+    color:#2B2244;
+}
+.heading{
+    color:black;
+    font-weight: bold;
+}
+
+.moto{
+    color:#765BBB;
+    background-color:#2B2244;
+    border:2px solid #2B2244;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+    padding:.5em;
+    
+}
+.box{
+    background-color:white;
+    border:2px solid #AAA7B2;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    
+    display:inline;
+    padding:10px;
+    margin-top:20px;
+}
+
+
+nav ul {
+    background-color: aliceblue;
+    
+    border:2px solid #765BBB;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+ 
+}
+nav ul li {
+    list-style-type: none;
+    font-size: 2em;
+
+}
+
+nav ul li a {
+    color:#2B2244;
+    text-decoration: none;
+    margin-right: 5px;
+    
+}
+nav ul li.active a {
+    color:#4F19DC;
+}
+nav ul li a:hover {
+    color:#765BBB;
+}
+
+
+
+.girl{
+  width: auto ;
+  max-width: 100% ;
+  height: auto ;
+  margin: 0 auto;
+}
+
+
+
+
+.weather-summary, article, .forecast{
+    border: 2px solid #765BBB;
+    background-color: aliceblue;
+    padding:20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+table{
+    margin-top: 20px;
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+
+
+footer {
+
+    color:#765BBB;
+    background-color:white;
+    border:2px solid white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding:20px;
+    margin-bottom: 20px;
+    
+    
+}
