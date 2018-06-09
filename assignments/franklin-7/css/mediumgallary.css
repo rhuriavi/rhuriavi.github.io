@@ -1,0 +1,30 @@
+@media only screen and (min-width:37.5em){
+    nav button{
+        display:none;
+    }
+    
+    nav ul.hide{
+        display:block;
+    }
+    nav ul{
+        margin-left: 2%;
+    }
+        
+        nav ul li{
+            float:left;
+        }
+    nav ul li a{
+        border:none;
+       
+        padding:.8rem .5rem;
+        
+    }
+    
+    .grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap:1em;
+        min-width: 37.5em;
+        margin: 0 auto;
+    }
+}
