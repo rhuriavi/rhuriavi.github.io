@@ -2,4 +2,10 @@
     nav ul li a{
         padding: .8rem .5rem;
 }
+    /*----------- MAIN --------------*/
+
+    form label.sbs{
+        padding:.4rem 0;
+        
+    }
 }

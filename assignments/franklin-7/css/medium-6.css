@@ -18,5 +18,8 @@
         padding:.8rem .5rem;
         
     }
+        
+        
          section.forecast { display: block}  /* show the 10-day forecast with the medium view and up */
+        
     }
