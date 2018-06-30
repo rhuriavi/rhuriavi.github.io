@@ -31,7 +31,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="franklin.html">Franklin</a></li>
             <li><a href="greenville.html">Greenville</a></li>
-            <li class="active"><a href="#">Springfield</a></li> 
+            <li class="active"><a href="springfield.html">Springfield</a></li> 
             <li><a href="stormcenter.html">Storm Center</a></li>
     	    <li><a href="gallary.html">Gallery</a></li>
         </ul>
@@ -44,23 +44,21 @@
           <img class="mainphoto" src="images/franklinimage2.jpeg" alt="Girl picking flowers">
       </figure>
       
-    <h2 class="heading">Franklin</h2>
+    <h2 class="heading">Springfield</h2>
+
 
       <section class="weather-summary">
           <h3 class="box">Weather Summary</h3>  
-          <h3><span id = "description">Clouds</span></h3>
-          <img src="https://openweathermap.org/img/w/02d.png" id = "icon" alt="Weather Icon">
-
-          <p>Current Tempurature: <span id = "temp">80.42&deg;F</span></p>
+          <h3>Sunny</h3>
       <div class="highlow">
-        <p>High:<span id = "high">82.4&deg;F</span></p>  
-        <p>Low: <span id = "low">77&deg;F</span></p>  
+        <p>High: 90&deg;F</p>  
+        <p>Low: 66&deg;F</p>  
       </div>   
           
       <div class="conditions">
         <p>Precipitation:0%</p>  
-        <p>Wind Speed: <span id = "wind">6.93</span></p>  
-      </div>    
+        <p>Wind Speed:5MPH sw</p>  
+      </div>           
     </section>
         
     <section class="forecast">
@@ -98,7 +96,7 @@
         <p>Enter the wind speed please <input type ="text" id = "eoinputBox"></p>
         <p>Enter average tempurature please <input type = "text" id ="inputBox"></p>
         <p><button type ="button" onclick="windChill()">Wind Chill</button></p>
-        <script src="scipts/windchill.js"></script><div id = "wind"> </div>
+        <script src="scripts/windchill.js"></script><div id = "wind"> </div>
         &deg;F
     </section>
       
