@@ -1,0 +1,20 @@
+@media only screen and (min-width: 64em){ 
+    nav ul li a{
+        padding: .8rem .5rem;
+}
+   .grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+        max-width: 37.5em;
+        margin: 0 auto;
+    }
+    
+    div section{
+        box-shadow: 5px 5px 10px black;
+    }
+    
+    footer{
+        margin-top:2em;
+    }
+}

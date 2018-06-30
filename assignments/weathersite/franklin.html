@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Cities Weather</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initail-scale=1">
+    <meta name="Weather page" content="Weather for Frankln">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main-6.css" type="text/css">
+    <link rel="stylesheet" href="css/medium-6.css" media="(min-width:37.5em)" type="text/css">
+    <link rel="stylesheet" href="css/large-6.css" media= "(min-width:64em)" type= "text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="scripts/currentdate.js"></script>
+</head>
+<body>
+        <header id="page-header">
+        </header>
+
+    <nav id="page-nav"></nav>
+
+    
+  <main>
+
+       <figure>
+          <img class="mainphoto" src="images/franklin-original.jpg" alt="Franklin Picture"
+             sizes="(max-width:600px) 80vw, 100vw"
+             srcset="images/franklin-original-assets/small.png , images/franklin-original-assets/meduium.png , 
+                     images/franklin-original-assets/large.png ">
+      </figure>
+      
+    <h2 class="secondheader">Franklin</h2>
+
+      <section class="weather-summary">
+          <h3 class="box">Weather Summary</h3>  
+          <h3>Sunny</h3>
+      <div class="highlow">
+        <p>High: 90&deg;F</p>  
+        <p>Low: 66&deg;F</p>  
+      </div>   
+          
+      <div class="conditions">
+        <p>Precipitation:0%</p>  
+        <p>Wind Speed:5MPH sw</p>  
+      </div>           
+    </section>
+        
+    <section class="forecast">
+      <h3 class="box">Ten Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+        <p>Enter the wind speed please <input type ="text" id = "eoinputBox"></p>
+        <p>Enter average tempurature please <input type = "text" id ="inputBox"></p>
+        <p><button type ="button" onclick="windChill()">Wind Chill</button></p>
+        <script src="scripts/windchill.js"></script><div id = "wind"> </div>
+        &deg;F
+    </section>
+      
+    <article>
+      <h3 class="box">Franklin Breaks Record</h3>	
+        <p class="town-article">The purrr-fect lorem ipsum generator for clients who love their cats and cat memes. It’ll have your cat loving clients purring their appreciation for your mock-ups in no time.The purrr-fect lorem ipsum generator for clients who love their cats and cat memes. It’ll have your cat loving clients purring their appreciation for your mock-ups in no time.The purrr-fect lorem ipsum generator for clients who love their cats and cat memes. It’ll have your cat loving clients purring their appreciation for your mock-ups in no time.
+      </p>
+      <img class="girl" src="images/franklinimage2.jpg" alt="Girl Picking Flowers">
+ 
+    </article>		  
+  
+  </main>
+    
+  
+    
+        <footer id="page-footer"></footer>  
+
+    
+        <script
+                src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous">
+        </script>
+        <script src="modules.js"></script>
+    <script src="scipts/hamburger.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>

@@ -4,7 +4,8 @@ body {
     /*font-family: 'arial', 'helvetica', sans-serif;/* Declare the base font-family */
     font-family: 'Montserrat', sans-serif;
     background-color: #AAA7B2;
-
+    max-width: 37.5em;
+    margin: 0 auto;
 
 }
 
@@ -119,6 +120,7 @@ nav{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
+    margin-bottom: 1.5em;
 }
 
 nav ul{
@@ -173,6 +175,7 @@ table{
     margin-right: 12em;
     width:20%;
 }
+
 
 /*footer----------------------------------------------------------------------*/
 

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Cities Weather Home Page</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initail-scale=1">
+    <meta name="Weather page" content="Weather for Frankln">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main-6.css" type="text/css">
+    <link rel="stylesheet" href="css/medium-6.css" media="(min-width:37.5em)" type="text/css">
+    <link rel="stylesheet" href="css/large-6.css" media= "(min-width:64em)" type= "text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="scripts/currentdate.js"></script>
+</head>
+<body>
+    
+    <!--<header id="header">
+      <picture>
+          <img src="images/logo.jpg" alt="logo"/>
+      </picture>
+      
+      
+      <h1 class="heading">Cities Weather</h1>
+      <h2 class="moto">The weather bureau is an umbrella organization.</h2>
+  </header>-->
+    <header includefile="header.html"></header>
+
+    <!-- NAVIGATION HERE -->
+    <nav id= "nav" class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li> 
+            <li><a href="stormcenter.html">Storm Center</a></li>
+    	    <li><a href="gallary.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <figure>
+        <img class = "centerPhoto" src= "images/franklinimage3.jpg" alt ="Clouds in the sky">
+    </figure>
+
+      <header>
+
+      </header>
+
+      <section>
+
+      </section>
+    <main>
+        
+
+
+        <script>
+    var header = document.querySelector('header');
+    var section = document.querySelector('section');
+        var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+        var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+        request.onload = function() {
+            var superHeroes = request.response;
+            populateHeader(superHeroes);
+            showHeroes(superHeroes);
+        }
+        
+        function populateHeader(jsonObj) {
+            var myH1 = document.createElement('h1');
+            myH1.textContent = "Towns";
+            header.appendChild(myH1);
+
+}
+    
+        
+        function showHeroes(jsonObj) {
+            var heroes = jsonObj['towns'];
+      
+            for (var i = 0; i < heroes.length; i++) {
+                var myArticle = document.createElement('article');
+                var myH2 = document.createElement('h2');
+                var myPara1 = document.createElement('p');
+                var myPara2 = document.createElement('p');
+                var myPara3 = document.createElement('p');
+                var myPara4 = document.createElement('p');
+                var myPara5 = document.createElement('p');
+                var myList = document.createElement('ul');
+
+                myH2.textContent = heroes[i].name;
+                myPara1.textContent = 'Motto: ' + heroes[i].motto;
+                myPara2.textContent = 'Year Founded: ' + heroes[i].yearFounded;
+                myPara3.textContent = 'Population: ' + heroes[i].currentPopulation;
+                myPara5.textContent = 'Population: ' + heroes[i].currentPopulation;
+                myPara4.textContent = 'Rainfall: ' + heroes[i].averageRainfall;
+                myPara3.textContent = 'Events:';
+
+        
+                var Events = heroes[i].events;
+                for (var j = 0; j < Events.length; j++) {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = Events[j];
+                    myList.appendChild(listItem);
+                }
+
+                myArticle.appendChild(myH2);
+                myArticle.appendChild(myPara1);
+                myArticle.appendChild(myPara2);
+                myArticle.appendChild(myPara5);
+                myArticle.appendChild(myPara4);
+                myArticle.appendChild(myPara3);
+                myArticle.appendChild(myList);
+
+                section.appendChild(myArticle);
+            }
+
+        } 
+    </script>
+    </main>
+	  
+    
+  <footer>
+    <section class="contact">
+      Contact information placeholder
+      999.999.9999
+      123 Main St. Anytown, US 99999
+      Google Map
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Cities Weather | <span id="currentdate">
+        <script>document.write(fullDate) </script>
+        </span>
+    </section>
+  </footer>
+    
+    <!--<footer id="footer"></footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="modules.js"></script>-->
+    <script src="scipts/hamburger.js"></script>
+    <script src="scripts/include.js"></script>
+    <script></script>
+</body>
+</html>

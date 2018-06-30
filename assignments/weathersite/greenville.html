@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Cities Weather</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initail-scale=1">
+    <meta name="Weather page" content="Weather for Frankln">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main-6.css" type="text/css">
+    <link rel="stylesheet" href="css/medium-6.css" media="(min-width:37.5em)" type="text/css">
+    <link rel="stylesheet" href="css/large-6.css" media= "(min-width:64em)" type= "text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="scripts/currentdate.js"></script>
+</head>
+<body>
+
+  <header>
+      <picture>
+          <img src="images/logo.jpg" alt="logo"/>
+      </picture>
+      
+      
+      <h1 class="heading">Cities Weather</h1>
+      <h2 class="moto">The weather bureau is an umbrella organization.</h2>
+  </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li class="active"><a href="#">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li> 
+            <li><a href="stormcenter.html">Storm Center</a></li>
+    	    <li><a href="gallary.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    
+  <main>
+
+      <figure>
+          <img class="mainphoto" src="images/franklinimage1.jpeg" alt="Franklin Picture">
+     
+      </figure>
+      
+    <h2 class="heading">Franklin</h2>
+
+      <section class="weather-summary">
+          <h3 class="box">Weather Summary</h3>  
+          <h3><span id = "description">Clouds</span></h3>
+          <img src="https://openweathermap.org/img/w/02d.png" id = "icon" alt="Weather Icon">
+
+          <p>Current Tempurature: <span id = "temp">80.42&deg;F</span></p>
+      <div class="highlow">
+        <p>High:<span id = "high">82.4&deg;F</span></p>  
+        <p>Low: <span id = "low">77&deg;F</span></p>  
+      </div>   
+          
+      <div class="conditions">
+        <p>Precipitation:0%</p>  
+        <p>Wind Speed: <span id = "wind">6.93</span></p>  
+      </div>    
+    </section>
+        
+    <section class="forecast">
+      <h3 class="box">Ten Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+        <p>Enter the wind speed please <input type ="text" id = "eoinputBox"></p>
+        <p>Enter average tempurature please <input type = "text" id ="inputBox"></p>
+        <p><button type ="button" onclick="windChill()">Wind Chill</button></p>
+        <script src="scipts/windchill.js"></script><div id = "wind"> </div>
+        &deg;F
+    </section>
+      
+    <article>
+      <h3 class="box">Greenville and the Weather</h3>	
+        <p class="town-article">The purrr-fect lorem ipsum generator for clients who love their cats and cat memes. It’ll have your cat loving clients purring their appreciation for your mock-ups in no time.The purrr-fect lorem ipsum generator for clients who love their cats and cat memes. It’ll have your cat loving clients purring their appreciation for your mock-ups in no time.The purrr-fect lorem ipsum generator for clients who love their cats and cat memes. It’ll have your cat loving clients purring their appreciation for your mock-ups in no time.
+      </p>
+      <img class="girl" src="images/gallary5.jpg" alt="Purple and blue sky">
+ 
+    </article>		  
+  
+  </main>
+    
+  <footer>
+    <section class="contact">
+      Contact information placeholder
+      999.999.9999
+      123 Main St. Anytown, US 99999
+      Google Map
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Cities Weather | <span id="currentdate">
+        <script>document.write(fullDate) </script>
+        </span>
+    </section>
+  </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>

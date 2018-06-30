@@ -1,0 +1,74 @@
+/*Changing the font family to Ubuntu or sans serif fonts*/
+body{
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+/*This changes the background colors of the table*/
+tbody tr:nth-child(odd) {
+    background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+
+
+/*blue with the black lettering--------------------*/
+thead th{
+    background-color: #7fb9c2;
+    color: black;
+    font-size:1.5em;
+    font-weight: bold;
+}
+
+tfoot tr{
+    background-color: #7fb9c2;
+    color: black;    
+}
+
+
+/*darker blue with the white lettering--------------*/
+thead tr{
+    background-color: #628ca6;
+    color:white;
+    font-weight: bold;
+}
+
+.darkblue{
+    background-color: #628ca6;
+    color:white;
+}
+
+/*centering everything in the table----------------*/
+
+tbody tr td:nth-child(2), tbody tr td:nth-child(1){
+    text-align: center;
+}
+
+tbody tr td:nth-child(3){
+    text-align: center;
+}
+
+tbody tr:nth-child(5) td:nth-child(1){
+    font-style: italic;
+}
+
+thead tr{
+    text-align: center;
+}
+
+tfoot tr td{
+    text-align: center;
+    font-size:.65em;
+}
+
+/*shadow on the table--------------------------------------*/
+table{
+    box-shadow: 5px 5px 18px #628ca6;
+}
+
+/*padding for the elements-------------------------------*/
+thead th, thead tr td, tbody tr td, tfoot tr td{
+    padding:10px;
+}
