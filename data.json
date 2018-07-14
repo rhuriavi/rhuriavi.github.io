@@ -1,0 +1,27 @@
+{
+"event" : "Events",
+"when" :[
+{
+   "name" : "Cycle the Continental Divide",
+   "date": "Dates",
+   "d" :[
+   "July 28, 2018", 
+   "August 4, 2018",
+   "August 11, 2018",
+   "August 18, 2018"
+   ]
+},
+"runTime" : "Please note that these dates are just start dates the actual course takes several days to run.",
+
+"costs" : "Cost",
+"costInfo": "The cost of registration is only $75. Please note that you will be required to bring food and water and you will also need a place to stay along the way.",
+
+"tip" : "Tips",
+"tipsTricks" :[
+"Stock up with food and water there are some areas where it is over a 100 miles before the next source of food or water.",
+"There are plenty of places to stay along the way just make sure that you plan ahead",
+"Take the map and guide book with a bit of skepticism and prepare for the worst. Towns might be closed (Atlantic City and Pie Town were both closed down for us), important creeks for water might be dry, and you will be climbing a lot, even if it doesnt say it.",
+"The roads in New Mexico are the most primitive and washboarded of the whole route. Use caution. We rode on fully rigid rigs and were wished we had front suspension or a thud buster seatpost most of the ride… especially in New Mexico. A 29+ bike may be ideal, although some sections the extra fat could definitely slow you down."
+]
+]
+}

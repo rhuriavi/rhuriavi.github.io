@@ -1,0 +1,135 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*Navigation----------------------------------------------------------------------*/
+nav button{
+    margin:0 2%;
+    background-color: #c9af98;
+    border:none;
+    font-size:1.6rem;
+    color:#555;
+    border-radius: 10px;
+    margin-top:1.5%;
+}
+nav{
+    background-color: #3a4660;
+    font-family: verdana, sans-serif;
+    margin-bottom: 1.5em;
+}
+
+nav ul{
+    list-style-type: none;
+    padding:0 ;
+    margin:0;
+}
+
+nav ul li a{
+    display:block;
+    padding: .8rem 2%; /*this makes it clickable by finger*/
+    text-decoration: none;
+    color:black;
+}
+
+nav ul li a:hover{
+    color: #c9af98;
+    text-decoration: underline;
+}
+
+nav ul li.active{
+    color:#ed8a63;
+}
+
+nav ul.hide{
+    display:none;
+}
+
+.active{
+   color:#ed8a63; 
+}
+/*Header-----------------------------------------------------------------------*/
+#page-header{
+    background-color: #3a4660;
+    border-bottom: 10px solid #ed8a63;
+}
+
+#logo{
+    float:right;
+    margin-top: 10px;
+    margin-right: 4em;
+    padding: 0;
+}
+
+/*Body-------------------------------------------------------------------------*/
+body{
+    background-color: #c9af98;
+    margin: 0;
+}
+
+form label.top, form div{
+    display:block;
+    padding-top: 1rem;
+    font-size: .8rem;
+    color: #3a4660;
+}
+
+form label.top input, form label.top select{
+    -webkit-appearance: none;
+    display:block;
+    font-size: 1rem;
+    border:solid 1px #999;
+    border-radius: 4px;
+    padding:.75rem;
+    color:#555;
+    width:100%;
+ 
+    background-color: rgba(0,0,0,0.1)
+}
+
+.size{
+    width:100%;
+    max-width:20rem;
+}
+
+main .bikes{
+    width:100%;
+    margin: 0;
+}
+
+main figure.bikes img{width: 100%}
+
+
+/*All heading styles----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6{
+    color: #845007;
+}
+
+/*footer----------------------------------------------------------------------*/
+
+#page-footer{
+    background-color: #3a4660;
+    border-top: 10px solid #ed8a63;
+    margin-bottom: -5px;
+}*/
+
+/*.parent{
+    display: flex;
+    justify-content: center;
+}*/
+
+.child{
+    padding: .8rem 2%; /*this makes it clickable by finger*/
+    text-decoration: none;
+    color:black;
+}
+
+
+/*makes elements not collapse*/
+.clearfix:after{
+    content:"";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Events</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initail-scale=1">
+    <meta name="Mountain Bike" content="Mountain Biking">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/medium.css" media="(min-width:37.5em)" type="text/css">
+    <link rel="stylesheet" href="css/large.css" media= "(min-width:64em)" type= "text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<body>
+        <header id="page-header">
+            <img id="logo" src="images/logo-transperant-background.png" alt="logo man biking">
+        
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul class="parent" id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a class="active" href="#">Events</a></li>
+            <li><a href="sales.html">Sales</a></li> 
+            <li><a href="services.html">Services</a></li>
+    	    <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+            
+    </header>
+    
+  <main>
+      <!--<div class="parent">
+      <div class="bodyCopy">
+      <h1>Events</h1>
+      <p>All the information you may need for all our biking expeditions, including dates, routs, and costs. There is a registration form at the bottom of the page. Thanks we hope you will take a trip with us soon.</p>
+      
+      <h2>Cycle the Continental Divide</h2>
+      
+      <h3>Dates</h3>
+      <ul>
+          <li>July 28, 2018</li>
+          <li>August 4, 2018</li>
+          <li>August 11, 2018</li>
+          <li>August 18, 2018</li>
+      </ul>
+      <p>Please note that these dates are just start dates the actual course takes several days to run.</p>
+      
+      <h3>Cost</h3>
+      <p>The cost of registration is only $75. Please note that you will be required to bring food and water and you will also need a place to stay along the way.</p>
+      
+      <h3>Route</h3>
+      <a href="http://www.peteandianhittheroad.co.uk/2015/05/cycling-the-great-divide-recommended-reading/"><img class="bikes" src="images/Great_Divide_Mountain_Bike_Route.gif" alt="route map of the great divide"></a> 
+      
+      <h3>Tips</h3>
+      <ul>
+          <li>Stock up with food and water there are some areas where it is over a 100 miles before the next source of food or water.</li>
+          <li>There are plenty of places to stay along the way just make sure that you plan ahead</li>
+          <li>Take the map and guide book with a bit of skepticism and prepare for the worst. Towns might be closed (Atlantic City and Pie Town were both closed down for us), important creeks for water might be dry, and you will be climbing a lot, even if it doesnt say it.</li>
+          <li>The roads in New Mexico are the most primitive and washboarded of the whole route. Use caution. We rode on fully rigid rigs and were wished we had front suspension or a thud buster seatpost most of the ride… especially in New Mexico. A 29+ bike may be ideal, although some sections the extra fat could definitely slow you down.</li>
+      </ul>
+       <form method="get" action="thanks.html">
+    <fieldset>
+        <legend>Personal Information</legend>
+            <label class="top">Full Name* <input type="text" pattern="[A-Za-z].{5,}" name="fname" required></label>
+            <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+            <label class="top">Email* <input type="email" name="email" placeholder="youremailhere@gmail.com" required></label>
+            <label class="top">Zip Code* <input type="number"  name="zip" placeholder="12345" required></label>
+    </fieldset>
+    <fieldset>
+        <legend>Aditional Information</legend>
+        <textarea  class="size" name="comment">special accommodations/comments</textarea>
+    </fieldset>
+    
+            <input type="submit" value="Register" class="submitBtn"> 
+    </form>
+      </div>
+      </div>-->
+      
+           <header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+    <script>
+    var header = document.querySelector('header');
+    var section = document.querySelector('section');
+        var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+        var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+        request.onload = function() {
+            var superHeroes = request.response;
+            populateHeader(superHeroes);
+            showHeroes(superHeroes);
+        }
+        
+        function populateHeader(jsonObj) {
+            var myH1 = document.createElement('h1');
+            myH1.textContent = jsonObj['squadName'];
+            header.appendChild(myH1);
+            
+            var myPara = document.createElement('p');
+            myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+            header.appendChild(myPara);
+}
+    
+        
+        function showHeroes(jsonObj) {
+            var heroes = jsonObj['members'];
+      
+            for (var i = 0; i < heroes.length; i++) {
+                var myArticle = document.createElement('article');
+                var myH2 = document.createElement('h2');
+                var myPara1 = document.createElement('p');
+                var myPara2 = document.createElement('p');
+                var myPara3 = document.createElement('p');
+                var myList = document.createElement('ul');
+
+                myH2.textContent = heroes[i].name;
+                myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
+                myPara2.textContent = 'Age: ' + heroes[i].age;
+                myPara3.textContent = 'Superpowers:';
+        
+                var superPowers = heroes[i].powers;
+                for (var j = 0; j < superPowers.length; j++) {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = superPowers[j];
+                    myList.appendChild(listItem);
+                }
+
+                myArticle.appendChild(myH2);
+                myArticle.appendChild(myPara1);
+                myArticle.appendChild(myPara2);
+                myArticle.appendChild(myPara3);
+                myArticle.appendChild(myList);
+
+                section.appendChild(myArticle);
+            }
+
+        }
+    </script>
+  </main>
+    
+  
+    
+    <footer id="page-footer">
+            <nav class="clearfix">
+        <ul class="parent">
+            <li class="child"><a href="index.html">Home</a></li>
+            <li class="child"><a href="tours.html">Tours</a></li>
+            <li class="child"><a class="active" href="events.html">Events</a></li>
+            <li class="child"><a href="sales.html">Sales</a></li> 
+            <li class="child"><a href="services.html">Services</a></li>
+    	    <li class="child"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>    
+    </footer>  
+
+    
+        <script
+                src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous">
+        </script>
+        <script src="modules.js"></script>
+    <script src="js/hamburger.js"></script>
+</body>
+</html>
