@@ -107,25 +107,95 @@ h1, h2, h3, h4, h5, h6{
     color: #845007;
 }
 
+dt a{
+    text-decoration: none;
+}
+
+/*table*/
+/*This changes the background colors of the table*/
+tbody tr:nth-child(odd) {
+    background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+
+/*blue with the black lettering--------------------*/
+thead th{
+    background-color: #7fb9c2;
+    color: black;
+    font-size:1.5em;
+    font-weight: bold;
+}
+
+tfoot tr{
+    background-color: #7fb9c2;
+    color: black;    
+}
+
+
+/*darker blue with the white lettering--------------*/
+thead tr{
+    background-color: #628ca6;
+    color:white;
+    font-weight: bold;
+}
+
+.darkblue{
+    background-color: #628ca6;
+    color:white;
+}
+
+/*centering everything in the table----------------*/
+
+tbody tr td:nth-child(2), tbody tr td:nth-child(1){
+    text-align: center;
+}
+
+tbody tr td:nth-child(3){
+    text-align: center;
+}
+
+tbody tr:nth-child(5) td:nth-child(1){
+    font-style: italic;
+}
+
+thead tr{
+    text-align: center;
+}
+
+tfoot tr td{
+    text-align: center;
+    font-size:.65em;
+}
+
+/*shadow on the table--------------------------------------*/
+table{
+    box-shadow: 5px 5px 18px #3a4660;
+    margin:1.5em;
+}
+
+/*padding for the elements-------------------------------*/
+thead th, thead tr td, tbody tr td, tfoot tr td{
+    padding:10px;
+}
+
 /*footer----------------------------------------------------------------------*/
 
 #page-footer{
     background-color: #3a4660;
     border-top: 10px solid #ed8a63;
     margin-bottom: -5px;
-}*/
+}
 
-/*.parent{
-    display: flex;
-    justify-content: center;
-}*/
 
 .child{
     padding: .8rem 2%; /*this makes it clickable by finger*/
     text-decoration: none;
     color:black;
 }
-
 
 /*makes elements not collapse*/
 .clearfix:after{
